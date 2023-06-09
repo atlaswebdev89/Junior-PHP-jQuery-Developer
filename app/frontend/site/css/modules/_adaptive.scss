@@ -1,0 +1,98 @@
+
+
+@include point-md {
+	.container {
+		grid-template-areas: "header" "main" "footer";
+		grid-template-columns: 1fr;
+	}
+	.aside {
+		opacity: 0;
+		visibility: hidden;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #ffffff;
+		min-height: 100vh;
+		min-width: 200px;
+		width: 60%;
+		// transition: all 0.4s ease;
+		transform: translateX(200%);
+		z-index: 12;
+		border-radius: 0;
+	}
+
+	.form-input {
+		input {
+			border: 1px solid #000;
+		}
+		label {
+			color: #26bd1c;
+			font-weight: 600;
+		}
+	}
+	.header {
+		flex-wrap: nowrap;
+		gap: 5px;
+		.nav-search {
+			display: block;
+		}
+		.title-block {
+			h1 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+	.main {
+		.item-house {
+			h2 {
+				font-size: 25px;
+				padding: 3px;
+			}
+			.list-value {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@include point-sm {
+	.main {
+		.item-house {
+			grid-template-rows: auto;
+			grid-template-columns: 1fr 1fr;
+			.images-houses {
+				grid-column: span 2;
+				grid-row: span 1;
+			}
+		}
+	}
+}
+
+@include point-ms {
+	.main {
+		padding: 0;
+		.item-house {
+			h2 {
+				font-size: 16px;
+				padding: 5px;
+			}
+			.list-value {
+				font-size: 10px;
+			}
+		}
+	}
+
+	.header {
+		.title-block {
+			h1 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+}

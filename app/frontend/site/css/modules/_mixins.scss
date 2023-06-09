@@ -1,0 +1,30 @@
+/* flex box*/
+@mixin flex-box($direct: row, $justify: center, $align: center, $wrap: wrap) {
+    display: flex;
+    flex-direction: $direct;
+    flex-wrap: $wrap;
+    width: 100%;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Ширина макета
+$maxWidth: 1100;
+$minWidth: 320;
+// pcSize - максимальный размер шрифта ( на ПК )
+// mobSize - минимальный размер шрифта ( на мобильном )
+@mixin text_adaptive($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addModSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(
+            #{$mobSize + px} + #{$addModSize} *
+                ((100vw - #{$minWidth + px}) / #{$maxWidth})
+        );
+    }
+    @media (min-width: 767px) {
+        font-size: calc(
+            #{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth})
+        );
+    }
+}

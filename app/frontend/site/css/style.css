@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Thin.ttf") format("truetype"), url("../fonst/Inter/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"), url("../fonst/Inter/Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Light.ttf") format("truetype"), url("../fonst/Inter/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Regular.ttf") format("truetype"), url("../fonst/Inter/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Medium.ttf") format("truetype"), url("../fonst/Inter/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-SemiBold.ttf") format("truetype"), url("../fonst/Inter/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Bold.ttf") format("truetype"), url("../fonst/Inter/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-ExtraBold.ttf") format("truetype"), url("../fonst/Inter/Inter-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../fonts/Inter/Inter-Black.ttf") format("truetype"), url("../fonst/Inter/Inter-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+.body-overlay {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-content: start;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  grid-template-areas: "aside header" "aside main" "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: minmax(60px, auto) 1fr minmax(60px, auto);
+  grid-gap: 10px;
+}
+
+.overlay {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.7);
+  z-index: 10;
+  transition: all 0.2s ease-out;
+}
+
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* flex box*/
+.header {
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  background-color: #bd1c3b;
+  grid-area: header;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  padding: 10px;
+  font-weight: 500;
+}
+.header .title-block {
+  flex-grow: 1;
+}
+.header .nav-search {
+  cursor: pointer;
+  height: 48px;
+  width: 24px;
+  display: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.header .nav-search span {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+.header .nav-search span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.4s ease;
+}
+.header .nav-search span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.4s ease;
+}
+.header .nav-search:hover span::after {
+  top: -8px;
+}
+.header .nav-search:hover span::before {
+  top: 8px;
+}
+
+.main {
+  background-color: grey;
+  grid-area: main;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main .item-house {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr minmax(100px, auto);
+  grid-gap: 10px;
+  margin: 10px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.main .item-house h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.main .item-house .images-houses {
+  grid-row: span 2;
+}
+.main .item-house .images-houses img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.main .description-house {
+  padding: 5px;
+}
+.main .description-house .list-value {
+  list-style: none;
+}
+.main .description-house .list-value li {
+  padding: 5px 0 5px 0;
+}
+.main .description-house a {
+  text-decoration: none;
+  color: #bd1c3b;
+}
+
+.footer {
+  border-radius: 10px;
+  background-color: #bd1c3b;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer .copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  padding-top: 100px;
+}
+.aside.open-aside {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.4s ease !important;
+  transform: translateX(0) !important;
+}
+
+.close-aside {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ffda50;
+  right: 100%;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.close-aside:hover {
+  transform: rotate(180deg);
+}
+
+h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 10px 10px 30px 10px;
+}
+
+.form-search {
+  width: 100%;
+}
+
+.form-input {
+  color: black;
+  padding: 10px;
+}
+.form-input input {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  overflow: visible;
+}
+.form-input label {
+  font-size: 16px;
+  display: inline-block;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+.form-input button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+.form-input-price {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+  }
+  .aside {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    min-width: 200px;
+    width: 60%;
+    transform: translateX(200%);
+    z-index: 12;
+    border-radius: 0;
+  }
+  .form-input input {
+    border: 1px solid #000;
+  }
+  .form-input label {
+    color: #26bd1c;
+    font-weight: 600;
+  }
+  .header {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .header .nav-search {
+    display: block;
+  }
+  .header .title-block h1 {
+    font-size: 30px;
+  }
+  .header .title-block p {
+    font-size: 12px;
+  }
+  .main .item-house h2 {
+    font-size: 25px;
+    padding: 3px;
+  }
+  .main .item-house .list-value {
+    font-size: 12px;
+  }
+}
+@media (max-width: 567px) {
+  .main .item-house {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .item-house .images-houses {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 0;
+  }
+  .main .item-house h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .main .item-house .list-value {
+    font-size: 10px;
+  }
+  .header .title-block h1 {
+    font-size: 20px;
+  }
+  .header .title-block p {
+    font-size: 12px;
+  }
+}
+h2 {
+  font-size: 40px;
+  font-family: Inter, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
