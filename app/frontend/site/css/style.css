@@ -190,6 +190,8 @@ body {
   grid-area: main;
   border-radius: 10px;
   padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 .main .item-house {
   display: grid;
@@ -227,6 +229,21 @@ body {
 .main .description-house a {
   text-decoration: none;
   color: #bd1c3b;
+}
+.main .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.main .loading.load {
+  visibility: visible;
+  opacity: 0.7;
 }
 
 .footer {
@@ -301,6 +318,22 @@ h3 {
 .form-search {
   width: 100%;
 }
+.form-search .form-message {
+  text-align: center;
+  color: #c30404;
+}
+.form-search .data-loading {
+  display: none;
+  padding-top: 5px;
+  height: 48px;
+  text-align: center;
+}
+.form-search .data-loading img {
+  height: 100%;
+}
+.form-search .data-loading.loading {
+  display: block;
+}
 
 .form-input {
   color: black;
@@ -314,6 +347,12 @@ h3 {
   outline: none;
   border: none;
   overflow: visible;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.form-input input::-webkit-outer-spin-button, .form-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .form-input label {
   font-size: 16px;
@@ -331,7 +370,16 @@ h3 {
   border-radius: 10px;
   border: none;
   background-color: green;
-  color: white;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.form-input button:hover {
+  color: #fff;
+}
+.form-input .error-validate {
+  padding: 6px;
+  color: #c30404;
 }
 
 .form-input-price {

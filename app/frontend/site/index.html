@@ -33,7 +33,13 @@
                     </div>
                     <div class="close-aside">X</div>
                     <div class="form-search">
-                        <form action="" method="post">
+                        <form
+                            action=""
+                            method="post"
+                            name="search-houses"
+                            id="search_houses"
+                            novalidate="novalidate"
+                        >
                             <div class="form-input">
                                 <label for="name">Name hotel</label>
                                 <input
@@ -47,7 +53,7 @@
                                 <label for="name">Number of Bedrooms</label>
                                 <input
                                     placeholder="Bedrooms"
-                                    type="text"
+                                    type="number"
                                     name="bedrooms"
                                     id="bedrooms"
                                 />
@@ -56,7 +62,7 @@
                                 <label for="name">Number of Bathrooms</label>
                                 <input
                                     placeholder="Bathrooms"
-                                    type="text"
+                                    type="number"
                                     name="bathrooms"
                                     id="bathrooms"
                                 />
@@ -65,7 +71,7 @@
                                 <label for="name">Number of Storeys</label>
                                 <input
                                     placeholder="Storeys"
-                                    type="text"
+                                    type="number"
                                     name="storeys"
                                     id="storeys"
                                 />
@@ -74,7 +80,7 @@
                                 <label for="name">Number of Garages</label>
                                 <input
                                     placeholder="Garages"
-                                    type="text"
+                                    type="number"
                                     name="garages"
                                     id="garages"
                                 />
@@ -82,111 +88,38 @@
                             <div class="form-input">
                                 <label for="min-price">Price</label>
                                 <div class="form-input-price">
-                                    <input
-                                        placeholder="from"
-                                        type="number"
-                                        name="min-price"
-                                        id="min-price"
-                                    />
-                                    <input
-                                        placeholder="to"
-                                        type="number"
-                                        name="max-price"
-                                        id="max-price"
-                                    />
+                                    <div>
+                                        <input
+                                            placeholder="from"
+                                            type="number"
+                                            name="min-price"
+                                            id="min-price"
+                                        />
+                                    </div>
+                                    <div>
+                                        <input
+                                            placeholder="to"
+                                            type="number"
+                                            name="max-price"
+                                            id="max-price"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-input">
-                                <button>Search</button>
+                                <button type="submit">Search</button>
                             </div>
                         </form>
+                        <div class="form-message"></div>
+                        <div class="data-loading">
+                            <img src="images/loader.gif" />
+                        </div>
                     </div>
                 </aside>
                 <main class="main">
+                    <div class="loading"></div>
                     <article class="item-house">
-                        <div class="images-houses">
-                            <img src="images/houses.jpeg" />
-                        </div>
-                        <h2>Name houses</h2>
-                        <div class="description-house">
-                            <ul class="list-value">
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                            </ul>
-                            <a href="#">More...</a>
-                        </div>
-                    </article>
-                    <article class="item-house">
-                        <div class="images-houses">
-                            <img src="images/houses.jpeg" />
-                        </div>
-                        <h2>Name houses</h2>
-                        <div class="description-house">
-                            <ul class="list-value">
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                            </ul>
-                            <a href="#">More...</a>
-                        </div>
-                    </article>
-                    <article class="item-house">
-                        <div class="images-houses">
-                            <img src="images/houses.jpeg" />
-                        </div>
-                        <h2>Name houses</h2>
-                        <div class="description-house">
-                            <ul class="list-value">
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                            </ul>
-                            <a href="#">More...</a>
-                        </div>
-                    </article>
-                    <article class="item-house">
-                        <div class="images-houses">
-                            <img src="images/houses.jpeg" />
-                        </div>
-                        <h2>Name houses</h2>
-                        <div class="description-house">
-                            <ul class="list-value">
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                            </ul>
-                            <a href="#">More...</a>
-                        </div>
-                    </article>
-                    <article class="item-house">
-                        <div class="images-houses">
-                            <img src="images/houses.jpeg" />
-                        </div>
-                        <h2>Name houses</h2>
-                        <div class="description-house">
-                            <ul class="list-value">
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                                <li>Bedrooms: 1</li>
-                                <li>Garages: 2</li>
-                                <li>Bathrooms: 3</li>
-                            </ul>
-                            <a href="#">More...</a>
-                        </div>
+                        <h2>Use FORM SEARCH HOUSES for select needed houses</h2>
                     </article>
                 </main>
                 <footer class="footer">

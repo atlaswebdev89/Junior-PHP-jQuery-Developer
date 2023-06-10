@@ -3,6 +3,8 @@
     grid-area: main;
     border-radius: 10px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
     .item-house {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -40,6 +42,21 @@
         a {
             text-decoration: none;
             color: #bd1c3b;
+        }
+    }
+    .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        transition: all 0.4s ease;
+        opacity: 0;
+        visibility: hidden;
+        &.load {
+            visibility: visible;
+            opacity: 0.7;
         }
     }
 }
