@@ -1,9 +1,4 @@
 @import "modules/fonts";
 @import "modules/variables.scss", "modules/default", "modules/mixins.scss", "modules/media";
-@import "partials/header", "partials/main", "partials/footer", "partials/sidebar", "partials/form";
+@import "partials/header", "partials/main", "partials/footer", "partials/sidebar", "partials/form", "partials/table";
 @import "modules/adaptive";
-
-h2 {
-    font-size: 40px;
-    font-family: Inter, sans-serif;
-}

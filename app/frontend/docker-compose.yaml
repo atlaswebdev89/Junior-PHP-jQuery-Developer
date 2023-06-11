@@ -9,6 +9,6 @@ services:
         restart: unless-stopped
         volumes:
             # Это файлы сайтов
-            - ./site:/usr/share/nginx/html
+            - ./dist:/usr/share/nginx/html
             # Файлы логов
             - ./logs:/var/log/nginx

@@ -1,3 +1,7 @@
+// Стили для приложения
+import '../../css/style.scss'
+const jQuery = require('jquery')
+
 const navSearch = document.querySelector('.nav-search')
 const overlay = document.querySelector('.overlay')
 const body = document.querySelector('body')
@@ -209,6 +213,11 @@ jQuery.noConflict()
                         createListHouses(data)
                     },
                     error: function (jqXHR, exception, e) {
+                        if (jqXHR.status === 0) {
+                            form.find('button,input').removeAttr('disabled')
+                            closeLoader()
+                            outputMsg('Error network connection')
+                        }
                         if (exception === 'timeout') {
                             // Произошел тайм-аут
                             //Включение кнопки и элементов формы

@@ -1533,3 +1533,295 @@
 2023/06/10 16:18:49 [error] 29#29: *1521 open() "/usr/share/nginx/html/fonst/Inter/Inter-ExtraLight.woff2" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /fonst/Inter/Inter-ExtraLight.woff2 HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/css/style.css"
 2023/06/10 16:18:49 [error] 29#29: *1522 open() "/usr/share/nginx/html/fonst/Inter/Inter-Regular.woff2" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /fonst/Inter/Inter-Regular.woff2 HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/css/style.css"
 2023/06/10 16:18:49 [error] 29#29: *1523 open() "/usr/share/nginx/html/fonst/Inter/Inter-ExtraBold.woff2" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /fonst/Inter/Inter-ExtraBold.woff2 HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/css/style.css"
+2023/06/10 22:26:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/10 22:26:05 [notice] 26#26: gracefully shutting down
+2023/06/10 22:26:05 [notice] 27#27: gracefully shutting down
+2023/06/10 22:26:05 [notice] 25#25: gracefully shutting down
+2023/06/10 22:26:05 [notice] 22#22: gracefully shutting down
+2023/06/10 22:26:05 [notice] 24#24: gracefully shutting down
+2023/06/10 22:26:05 [notice] 29#29: gracefully shutting down
+2023/06/10 22:26:05 [notice] 28#28: gracefully shutting down
+2023/06/10 22:26:05 [notice] 23#23: gracefully shutting down
+2023/06/10 22:26:05 [notice] 27#27: exiting
+2023/06/10 22:26:05 [notice] 24#24: exiting
+2023/06/10 22:26:05 [notice] 26#26: exiting
+2023/06/10 22:26:05 [notice] 25#25: exiting
+2023/06/10 22:26:05 [notice] 23#23: exiting
+2023/06/10 22:26:05 [notice] 22#22: exiting
+2023/06/10 22:26:05 [notice] 25#25: exit
+2023/06/10 22:26:05 [notice] 28#28: exiting
+2023/06/10 22:26:05 [notice] 24#24: exit
+2023/06/10 22:26:05 [notice] 29#29: exiting
+2023/06/10 22:26:05 [notice] 22#22: exit
+2023/06/10 22:26:05 [notice] 23#23: exit
+2023/06/10 22:26:05 [notice] 28#28: exit
+2023/06/10 22:26:05 [notice] 29#29: exit
+2023/06/10 22:26:05 [notice] 26#26: exit
+2023/06/10 22:26:05 [notice] 27#27: exit
+2023/06/10 22:26:05 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/06/10 22:26:05 [notice] 1#1: worker process 25 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:26:05 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/06/10 22:26:05 [notice] 1#1: worker process 22 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:26:05 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/10 22:26:05 [notice] 1#1: worker process 26 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: worker process 28 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: worker process 29 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:26:05 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/06/10 22:26:05 [notice] 1#1: worker process 24 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: worker process 27 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:26:05 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/06/10 22:26:05 [notice] 1#1: worker process 23 exited with code 0
+2023/06/10 22:26:05 [notice] 1#1: exit
+2023/06/10 22:27:20 [notice] 1#1: using the "epoll" event method
+2023/06/10 22:27:20 [notice] 1#1: nginx/1.23.4
+2023/06/10 22:27:20 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/10 22:27:20 [notice] 1#1: OS: Linux 5.19.0-43-generic
+2023/06/10 22:27:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/10 22:27:20 [notice] 1#1: start worker processes
+2023/06/10 22:27:20 [notice] 1#1: start worker process 22
+2023/06/10 22:27:20 [notice] 1#1: start worker process 23
+2023/06/10 22:27:20 [notice] 1#1: start worker process 24
+2023/06/10 22:27:20 [notice] 1#1: start worker process 25
+2023/06/10 22:27:20 [notice] 1#1: start worker process 26
+2023/06/10 22:27:20 [notice] 1#1: start worker process 27
+2023/06/10 22:27:20 [notice] 1#1: start worker process 28
+2023/06/10 22:27:20 [notice] 1#1: start worker process 29
+2023/06/10 22:28:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/10 22:28:29 [notice] 23#23: gracefully shutting down
+2023/06/10 22:28:29 [notice] 25#25: gracefully shutting down
+2023/06/10 22:28:29 [notice] 23#23: exiting
+2023/06/10 22:28:29 [notice] 25#25: exiting
+2023/06/10 22:28:29 [notice] 22#22: gracefully shutting down
+2023/06/10 22:28:29 [notice] 25#25: exit
+2023/06/10 22:28:29 [notice] 23#23: exit
+2023/06/10 22:28:29 [notice] 22#22: exiting
+2023/06/10 22:28:29 [notice] 22#22: exit
+2023/06/10 22:28:29 [notice] 24#24: gracefully shutting down
+2023/06/10 22:28:29 [notice] 29#29: gracefully shutting down
+2023/06/10 22:28:29 [notice] 29#29: exiting
+2023/06/10 22:28:29 [notice] 24#24: exiting
+2023/06/10 22:28:29 [notice] 24#24: exit
+2023/06/10 22:28:29 [notice] 29#29: exit
+2023/06/10 22:28:29 [notice] 27#27: gracefully shutting down
+2023/06/10 22:28:29 [notice] 27#27: exiting
+2023/06/10 22:28:29 [notice] 27#27: exit
+2023/06/10 22:28:29 [notice] 28#28: gracefully shutting down
+2023/06/10 22:28:29 [notice] 28#28: exiting
+2023/06/10 22:28:29 [notice] 28#28: exit
+2023/06/10 22:28:29 [notice] 26#26: gracefully shutting down
+2023/06/10 22:28:29 [notice] 26#26: exiting
+2023/06/10 22:28:29 [notice] 26#26: exit
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/10 22:28:29 [notice] 1#1: worker process 28 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: worker process 26 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: worker process 29 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/10 22:28:29 [notice] 1#1: worker process 27 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/06/10 22:28:29 [notice] 1#1: worker process 22 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/06/10 22:28:29 [notice] 1#1: worker process 23 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: worker process 25 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/06/10 22:28:29 [notice] 1#1: worker process 24 exited with code 0
+2023/06/10 22:28:29 [notice] 1#1: exit
+2023/06/11 07:22:43 [notice] 1#1: using the "epoll" event method
+2023/06/11 07:22:43 [notice] 1#1: nginx/1.23.4
+2023/06/11 07:22:43 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/11 07:22:43 [notice] 1#1: OS: Linux 5.19.0-43-generic
+2023/06/11 07:22:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/11 07:22:43 [notice] 1#1: start worker processes
+2023/06/11 07:22:43 [notice] 1#1: start worker process 22
+2023/06/11 07:22:43 [notice] 1#1: start worker process 23
+2023/06/11 07:22:43 [notice] 1#1: start worker process 24
+2023/06/11 07:22:43 [notice] 1#1: start worker process 25
+2023/06/11 07:22:43 [notice] 1#1: start worker process 26
+2023/06/11 07:22:43 [notice] 1#1: start worker process 27
+2023/06/11 07:22:43 [notice] 1#1: start worker process 28
+2023/06/11 07:22:43 [notice] 1#1: start worker process 29
+2023/06/11 10:32:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/11 10:32:41 [notice] 28#28: gracefully shutting down
+2023/06/11 10:32:41 [notice] 29#29: gracefully shutting down
+2023/06/11 10:32:41 [notice] 27#27: gracefully shutting down
+2023/06/11 10:32:41 [notice] 22#22: gracefully shutting down
+2023/06/11 10:32:41 [notice] 24#24: gracefully shutting down
+2023/06/11 10:32:41 [notice] 26#26: gracefully shutting down
+2023/06/11 10:32:41 [notice] 25#25: gracefully shutting down
+2023/06/11 10:32:41 [notice] 23#23: gracefully shutting down
+2023/06/11 10:32:41 [notice] 28#28: exiting
+2023/06/11 10:32:41 [notice] 29#29: exiting
+2023/06/11 10:32:41 [notice] 27#27: exiting
+2023/06/11 10:32:41 [notice] 22#22: exiting
+2023/06/11 10:32:41 [notice] 29#29: exit
+2023/06/11 10:32:41 [notice] 22#22: exit
+2023/06/11 10:32:41 [notice] 23#23: exiting
+2023/06/11 10:32:41 [notice] 25#25: exiting
+2023/06/11 10:32:41 [notice] 24#24: exiting
+2023/06/11 10:32:41 [notice] 23#23: exit
+2023/06/11 10:32:41 [notice] 26#26: exiting
+2023/06/11 10:32:41 [notice] 25#25: exit
+2023/06/11 10:32:41 [notice] 24#24: exit
+2023/06/11 10:32:41 [notice] 26#26: exit
+2023/06/11 10:32:41 [notice] 27#27: exit
+2023/06/11 10:32:41 [notice] 28#28: exit
+2023/06/11 10:32:41 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/06/11 10:32:41 [notice] 1#1: worker process 22 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: worker process 23 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 10:32:41 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/06/11 10:32:41 [notice] 1#1: worker process 24 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: worker process 25 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: worker process 27 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: worker process 28 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: worker process 29 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 10:32:41 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/11 10:32:41 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/06/11 10:32:41 [notice] 1#1: worker process 26 exited with code 0
+2023/06/11 10:32:41 [notice] 1#1: exit
+2023/06/11 10:32:44 [notice] 1#1: using the "epoll" event method
+2023/06/11 10:32:44 [notice] 1#1: nginx/1.23.4
+2023/06/11 10:32:44 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/11 10:32:44 [notice] 1#1: OS: Linux 5.19.0-43-generic
+2023/06/11 10:32:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/11 10:32:44 [notice] 1#1: start worker processes
+2023/06/11 10:32:44 [notice] 1#1: start worker process 29
+2023/06/11 10:32:44 [notice] 1#1: start worker process 30
+2023/06/11 10:32:44 [notice] 1#1: start worker process 31
+2023/06/11 10:32:44 [notice] 1#1: start worker process 32
+2023/06/11 10:32:44 [notice] 1#1: start worker process 33
+2023/06/11 10:32:44 [notice] 1#1: start worker process 34
+2023/06/11 10:32:44 [notice] 1#1: start worker process 35
+2023/06/11 10:32:44 [notice] 1#1: start worker process 36
+2023/06/11 10:32:47 [error] 30#30: *2 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:32:48 [error] 30#30: *2 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:47:55 [error] 29#29: *19 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:47:55 [error] 29#29: *20 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:47:58 [error] 29#29: *21 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:00 [error] 29#29: *22 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:01 [error] 29#29: *24 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:19 [error] 30#30: *28 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:19 [error] 30#30: *28 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:23 [error] 30#30: *31 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:23 [error] 30#30: *32 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:25 [error] 31#31: *37 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:25 [error] 30#30: *36 open() "/usr/share/nginx/html/css/style.min.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.min.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:25 [error] 30#30: *36 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:29 [error] 30#30: *38 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 10:48:29 [error] 31#31: *37 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:03:01 [error] 30#30: *40 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:03:01 [error] 31#31: *39 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:03:01 [error] 30#30: *40 open() "/usr/share/nginx/html/images/loader.gif" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /images/loader.gif HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:03:01 [error] 31#31: *43 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787"
+2023/06/11 11:03:02 [error] 30#30: *42 open() "/usr/share/nginx/html/images/favicon.ico" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /images/favicon.ico HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:14:37 [error] 32#32: *46 open() "/usr/share/nginx/html/css/style.css" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /css/style.css HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:14:37 [error] 31#31: *45 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787", referrer: "http://localhost:8787/"
+2023/06/11 11:14:38 [error] 31#31: *48 open() "/usr/share/nginx/html/js/bundles.js" failed (2: No such file or directory), client: 192.168.208.1, server: localhost, request: "GET /js/bundles.js HTTP/1.1", host: "localhost:8787"
+2023/06/11 11:27:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/11 11:27:55 [notice] 32#32: gracefully shutting down
+2023/06/11 11:27:55 [notice] 31#31: gracefully shutting down
+2023/06/11 11:27:55 [notice] 33#33: gracefully shutting down
+2023/06/11 11:27:55 [notice] 36#36: gracefully shutting down
+2023/06/11 11:27:55 [notice] 30#30: gracefully shutting down
+2023/06/11 11:27:55 [notice] 29#29: gracefully shutting down
+2023/06/11 11:27:55 [notice] 35#35: gracefully shutting down
+2023/06/11 11:27:55 [notice] 34#34: gracefully shutting down
+2023/06/11 11:27:55 [notice] 32#32: exiting
+2023/06/11 11:27:55 [notice] 31#31: exiting
+2023/06/11 11:27:55 [notice] 36#36: exiting
+2023/06/11 11:27:55 [notice] 33#33: exiting
+2023/06/11 11:27:55 [notice] 29#29: exiting
+2023/06/11 11:27:55 [notice] 30#30: exiting
+2023/06/11 11:27:55 [notice] 34#34: exiting
+2023/06/11 11:27:55 [notice] 35#35: exiting
+2023/06/11 11:27:55 [notice] 33#33: exit
+2023/06/11 11:27:55 [notice] 34#34: exit
+2023/06/11 11:27:55 [notice] 35#35: exit
+2023/06/11 11:27:55 [notice] 32#32: exit
+2023/06/11 11:27:55 [notice] 31#31: exit
+2023/06/11 11:27:55 [notice] 36#36: exit
+2023/06/11 11:27:55 [notice] 30#30: exit
+2023/06/11 11:27:55 [notice] 29#29: exit
+2023/06/11 11:27:55 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/11 11:27:55 [notice] 1#1: worker process 29 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: worker process 31 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: worker process 32 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: worker process 33 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 11:27:55 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/06/11 11:27:55 [notice] 1#1: worker process 35 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 11:27:55 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/06/11 11:27:55 [notice] 1#1: worker process 30 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 11:27:55 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/06/11 11:27:55 [notice] 1#1: worker process 34 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 11:27:55 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/06/11 11:27:55 [notice] 1#1: worker process 36 exited with code 0
+2023/06/11 11:27:55 [notice] 1#1: exit
+2023/06/11 14:35:24 [notice] 1#1: using the "epoll" event method
+2023/06/11 14:35:24 [notice] 1#1: nginx/1.23.4
+2023/06/11 14:35:24 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/11 14:35:24 [notice] 1#1: OS: Linux 5.19.0-43-generic
+2023/06/11 14:35:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/11 14:35:24 [notice] 1#1: start worker processes
+2023/06/11 14:35:24 [notice] 1#1: start worker process 22
+2023/06/11 14:35:24 [notice] 1#1: start worker process 23
+2023/06/11 14:35:24 [notice] 1#1: start worker process 24
+2023/06/11 14:35:24 [notice] 1#1: start worker process 25
+2023/06/11 14:35:24 [notice] 1#1: start worker process 26
+2023/06/11 14:35:24 [notice] 1#1: start worker process 27
+2023/06/11 14:35:24 [notice] 1#1: start worker process 28
+2023/06/11 14:35:24 [notice] 1#1: start worker process 29
+2023/06/11 14:35:28 [error] 22#22: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.208.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8787"
+2023/06/11 14:35:29 [error] 22#22: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.208.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8787"
+2023/06/11 14:35:34 [error] 23#23: *3 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.208.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8787"
+2023/06/11 14:38:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/11 14:38:25 [notice] 22#22: gracefully shutting down
+2023/06/11 14:38:25 [notice] 24#24: gracefully shutting down
+2023/06/11 14:38:25 [notice] 26#26: gracefully shutting down
+2023/06/11 14:38:25 [notice] 28#28: gracefully shutting down
+2023/06/11 14:38:25 [notice] 23#23: gracefully shutting down
+2023/06/11 14:38:25 [notice] 27#27: gracefully shutting down
+2023/06/11 14:38:25 [notice] 29#29: gracefully shutting down
+2023/06/11 14:38:25 [notice] 29#29: exiting
+2023/06/11 14:38:25 [notice] 25#25: gracefully shutting down
+2023/06/11 14:38:25 [notice] 29#29: exit
+2023/06/11 14:38:25 [notice] 23#23: exiting
+2023/06/11 14:38:25 [notice] 23#23: exit
+2023/06/11 14:38:25 [notice] 26#26: exiting
+2023/06/11 14:38:25 [notice] 22#22: exiting
+2023/06/11 14:38:25 [notice] 22#22: exit
+2023/06/11 14:38:25 [notice] 26#26: exit
+2023/06/11 14:38:25 [notice] 27#27: exiting
+2023/06/11 14:38:25 [notice] 27#27: exit
+2023/06/11 14:38:25 [notice] 28#28: exiting
+2023/06/11 14:38:25 [notice] 24#24: exiting
+2023/06/11 14:38:25 [notice] 28#28: exit
+2023/06/11 14:38:25 [notice] 24#24: exit
+2023/06/11 14:38:25 [notice] 25#25: exiting
+2023/06/11 14:38:25 [notice] 25#25: exit
+2023/06/11 14:38:25 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/11 14:38:25 [notice] 1#1: worker process 23 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: worker process 24 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: worker process 26 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: worker process 27 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: worker process 28 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: worker process 29 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 14:38:25 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/06/11 14:38:25 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/06/11 14:38:25 [notice] 1#1: worker process 22 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/11 14:38:25 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/06/11 14:38:25 [notice] 1#1: worker process 25 exited with code 0
+2023/06/11 14:38:25 [notice] 1#1: exit
