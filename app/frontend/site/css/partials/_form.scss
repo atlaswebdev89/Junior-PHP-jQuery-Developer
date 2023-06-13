@@ -1,0 +1,75 @@
+.form-search {
+	width: 100%;
+	.form-message {
+		text-align: center;
+		color: #c30404;
+	}
+	.data-loading {
+		display: none;
+		padding-top: 5px;
+		height: 48px;
+		text-align: center;
+		img {
+			height: 100%;
+		}
+		&.loading {
+			display: block;
+		}
+	}
+}
+
+.form-input {
+	input {
+		width: 100%;
+		border-radius: 10px;
+		font-size: 14px;
+		padding: 8px;
+		outline: none;
+		border: none;
+		overflow: visible;
+		// Убрать стрелки  у input type=number
+		-moz-appearance: textfield;
+		-webkit-appearance: textfield;
+		appearance: textfield;
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+	color: black;
+
+	padding: 10px;
+
+	label {
+		font-size: 16px;
+		display: inline-block;
+		color: white;
+		font-family: Inter, sans-serif;
+		font-style: italic;
+		font-weight: 500;
+		padding-bottom: 5px;
+		margin-left: 5px;
+	}
+	button {
+		width: 100%;
+		padding: 10px;
+		border-radius: 10px;
+		border: none;
+		background-color: green;
+		color: #000;
+		cursor: pointer;
+		transition: all 0.4s ease;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.error-validate {
+		padding: 6px;
+		color: #c30404;
+	}
+}
+.form-input-price {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 5px;
+}

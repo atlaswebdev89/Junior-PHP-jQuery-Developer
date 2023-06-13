@@ -1,0 +1,64 @@
+.header {
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background-color: #bd1c3b;
+    grid-area: header;
+    color: white;
+    @include flex-box();
+
+    h1 {
+        padding: 10px;
+        font-weight: 500;
+    }
+    .title-block {
+        flex-grow: 1;
+    }
+    .nav-search {
+        cursor: pointer;
+        height: 48px;
+        width: 24px;
+        display: none;
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        span {
+            position: relative;
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: white;
+            border-radius: 2px;
+            transition: all 0.4s ease;
+        }
+        span::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 24px;
+            height: 2px;
+            background-color: white;
+            transition: all 0.4s ease;
+        }
+        span::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -8px;
+            width: 24px;
+            height: 2px;
+            background-color: white;
+            transition: all 0.4s ease;
+        }
+        &:hover {
+            span::after {
+                top: -8px;
+            }
+            span::before {
+                top: 8px;
+            }
+        }
+    }
+}

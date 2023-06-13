@@ -1,0 +1,11 @@
+.footer {
+	border-radius: 10px;
+	background-color: #bd1c3b;
+	grid-area: footer;
+	@include flex-box();
+	.copyright {
+		@include flex-box();
+		gap: 6px;
+		color: white;
+	}
+}

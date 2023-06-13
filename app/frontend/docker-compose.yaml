@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    nginx-task-one:
+        image: nginx:latest
+        container_name: nginx-frontend-part
+        ports:
+            - '8787:80'
+        restart: unless-stopped
+        volumes:
+            # Это файлы сайтов
+            - ./dist:/usr/share/nginx/html
+            # Файлы логов
+            - ./logs:/var/log/nginx

@@ -1,0 +1,62 @@
+.main {
+    background-color: grey;
+    grid-area: main;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    .item-house {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr minmax(100px, auto);
+        grid-gap: 10px;
+        margin: 10px;
+        border: 1px solid silver;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .images-houses {
+            grid-row: span 2;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .description-house {
+        padding: 5px;
+        .list-value {
+            list-style: none;
+            li {
+                padding: 5px 0 5px 0;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #bd1c3b;
+        }
+    }
+    .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        transition: all 0.4s ease;
+        opacity: 0;
+        visibility: hidden;
+        &.load {
+            visibility: visible;
+            opacity: 0.7;
+        }
+    }
+}
