@@ -60,6 +60,12 @@
 			}
 		}
 	}
+	.table-houses {
+		font-size: 14px;
+		td, tr, th {
+			padding:0;
+		}
+	}
 }
 
 @include point-sm {
@@ -72,6 +78,9 @@
 				grid-row: span 1;
 			}
 		}
+	}
+	.table-houses {
+		font-size: 12px;
 	}
 }
 
@@ -98,5 +107,8 @@
 				font-size: 12px;
 			}
 		}
+	}
+	.table-houses {
+		font-size: 10px;
 	}
 }
