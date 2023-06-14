@@ -27,7 +27,8 @@
         "build": "browserify site/js/modules/scripts.js -o site/js/bundle.js",
         "build-watch": "watchify site/js/modules/scripts.js -o site/js/bundle.js -v",
         "test-build": "browserify site/js/modules/main.js -o site/js/bun.js",
-        "webpack-build:watch": "webpack --watch",
+        "webpack:watch": "webpack --watch",
+        "webpack:build": "webpack",
         "serve": "webpack serve"
     }
 }

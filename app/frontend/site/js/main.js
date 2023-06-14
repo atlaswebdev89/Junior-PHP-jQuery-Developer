@@ -33,7 +33,7 @@ jQuery.noConflict()
         $('#search_houses').on('submit', (event) => {
             event.preventDefault()
 
-            const api = 'http://localhost:8118'
+            const api = 'http://localhost:8201/api/houses'
             const form = $(this)
 
             if (validateForm(form.find('input')) === 0) {
