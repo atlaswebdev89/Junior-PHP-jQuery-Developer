@@ -1201,3 +1201,17 @@ The exception occurred while attempting to log: The stream or file "/var/...; PH
 2023/06/14 00:12:31 [notice] 1#1: start worker process 25
 2023/06/14 00:12:31 [notice] 1#1: start worker process 26
 2023/06/14 00:12:31 [notice] 1#1: start worker process 27
+2023/06/14 00:17:06 [notice] 1#1: using the "epoll" event method
+2023/06/14 00:17:06 [notice] 1#1: nginx/1.23.4
+2023/06/14 00:17:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/14 00:17:06 [notice] 1#1: OS: Linux 5.19.0-43-generic
+2023/06/14 00:17:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/14 00:17:06 [notice] 1#1: start worker processes
+2023/06/14 00:17:06 [notice] 1#1: start worker process 20
+2023/06/14 00:17:06 [notice] 1#1: start worker process 21
+2023/06/14 00:17:06 [notice] 1#1: start worker process 22
+2023/06/14 00:17:06 [notice] 1#1: start worker process 23
+2023/06/14 00:17:06 [notice] 1#1: start worker process 24
+2023/06/14 00:17:06 [notice] 1#1: start worker process 25
+2023/06/14 00:17:06 [notice] 1#1: start worker process 26
+2023/06/14 00:17:06 [notice] 1#1: start worker process 27
